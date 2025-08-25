@@ -1,0 +1,23 @@
+h1{
+    background-color: darkgray;
+}
+h2{
+    background-color: green;
+}
+box1{
+    background-color: blue;
+}
+box2{
+    background-color: red;
+  /* 1 giá trị thì cách cả 2 bên = gtri đó */
+  /* 2 giá trị thì gtri đầu là trái sau là phải*/
+  /* 4 giá trị thì trên phải dưới trái (chiều kim đồng hồ)*/
+  /*margin: 50px 10px 100px 30px ; */
+  width: 50%;
+  /* auto cân khối ra giữa */
+  margin: 50px auto;
+  padding: 100px;
+}
+box3{
+    background-color: green;
+}
