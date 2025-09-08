@@ -6,7 +6,11 @@ body {
 nav {
     background-color: #0c4ca3;
 }
-
+.end {
+    display: flex;
+    justify-content: left;
+    margin: 0px 150px;
+}
 .danhsach-phandau{
     display: flex;
     justify-content: center;
@@ -63,7 +67,7 @@ nav {
 .noidung-tintuc{
     width: 250px; 
     height: 500px;  
-    text-align: left;       /* căn ngang về bên trái */
+    text-align: left;     
     vertical-align: top;
 }
 
