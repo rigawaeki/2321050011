@@ -1,0 +1,79 @@
+
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: #0c4ca3;
+}
+
+.danhsach-phandau{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.border{
+    
+    border-right: 1px solid gray;
+    padding: 15px;
+}
+
+.danhmuc-lienket{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, Arial, Tahoma;
+}
+
+.banner-qc {
+    display: flex;
+    justify-content: center;
+}
+
+.qc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tintuc {
+    color: #0c4ca3;
+    text-decoration: none;
+    font-family: Roboto, Arial, Tahoma;   
+    margin-right: 20px;
+    
+}
+
+.banner-tintuc {
+    display: flex;
+    justify-content: center;
+}
+
+.tieude-tintuc {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px ;
+    flex-direction: column;
+    overflow: hidden;  
+    box-sizing: border-box;  
+}
+
+.anh-tintuc img {
+    width: 250px;   
+    height: 200px; 
+}
+.noidung-tintuc{
+    width: 250px; 
+    height: 500px;  
+    text-align: left;       /* căn ngang về bên trái */
+    vertical-align: top;
+}
+
+header {
+    border-bottom: 15px solid #f1f1f2;
+}
+h1{
+    font-size: 30px;
+    display: inline-block;
+    color: #004b9b;
+    border-bottom: 5px solid #004b9b;
+    margin-right: 2 ;
+}
