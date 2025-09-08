@@ -2,7 +2,6 @@
 body {
     margin: 0px;
 }
-
 nav {
     background-color: #0c4ca3;
 }
@@ -29,7 +28,7 @@ nav {
 }
 
 .banner-qc {
-    display: flex;
+    display: flex;  
     justify-content: center;
 }
 
