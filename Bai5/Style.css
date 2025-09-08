@@ -1,6 +1,6 @@
 
 body {
-    margin: 0px;
+    margin: 0px
 }
 nav {
     background-color: #0c4ca3;
@@ -41,35 +41,37 @@ nav {
     color: #0c4ca3;
     text-decoration: none;
     font-family: Roboto, Arial, Tahoma;   
-    margin-right: 20px;
+    margin: 20px;
     
 }
 
 .banner-tintuc {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin-right: 20px;
+    width: 100%;
 }
 
 .tieude-tintuc {
     display: flex;
     justify-content: space-between;
-    margin: 20px ;
+    margin: 10px ;
     flex-direction: column;
     overflow: hidden;  
     box-sizing: border-box;  
 }
 
 .anh-tintuc img {
-    width: 250px;   
+    width: 300px;   
     height: 200px; 
 }
 .noidung-tintuc{
     width: 250px; 
-    height: 500px;  
+    height: auto;  
     text-align: left;     
     vertical-align: top;
 }
-
 header {
     border-bottom: 15px solid #f1f1f2;
 }
@@ -78,5 +80,16 @@ h1{
     display: inline-block;
     color: #004b9b;
     border-bottom: 5px solid #004b9b;
-    margin-right: 2 ;
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 20%;
+}
+.nen-tintuc {
+    background-color: rgb(184, 183, 183);
+}
+.noidung-tintuc{
+    margin: 5%;
+}
+footer {
+    color: white;
 }
