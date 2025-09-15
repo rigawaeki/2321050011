@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+    height: 20%;
+}
+body {
+    background-color: grey;
+}
+main {
+    justify-content: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    height: 500px;
+}
+.img {
+
+}
+.log {
+    
+}
