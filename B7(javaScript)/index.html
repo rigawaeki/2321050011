@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+        // để viết chú thích js dùng kí tự //
+        document.writeln("helloworld " + "<br>"); 
+        // JS để nối chuỗi câu sử dụng +
+        let hoTen = "Pham Van Dai";
+        document.writeln(hoTen + "<br>");
+
+        // khai báo hằng số const 
+        const pi = 3.14;
+        let soThuNhat =10;
+        let soThuHai =5;
+        let ketQua = 0;
+        // +
+        ketQua = soThuHai % soThuNhat;
+        ketQua++;
+        document.writeln(ketQua);
+        // - * / %
+        soThuNhat-=soThuHai;
+        // 
+        document.writeln(soThuNhat);
+        let soThuBa = "10";
+        // == so sanh gia tri k quan tam toi kieu du kieu === thi quan tam toi kieu du lieu
+        document.writeln(soThuNhat == soThuBa)
+        let thongTinSinhVien ={
+            hoTen: " Pham Van Dai",
+            tuoi:20,
+            gioiTinh: true, 
+            lop: " Mang may tinh k68",
+        }
+        let diaChiDai ={
+            thanhPho : "Ha Noi",
+            quanHuyen : "Dong Da",
+            phuong : "Kim Lien",
+            soNha : 36,
+        }
+        thongTinSinhVien.diaChi = diaChiDai;
+            let nam=2025;
+        document.writeln("Xin chao!" + thongTinSinhVien.hoTen+ " lop " +thongTinSinhVien.lop +" "+ thongTinSinhVien.diaChi.soNha 
+        +" Nam SInh "+ (nam - thongTinSinhVien.tuoi) );
+
+        parseInt(soThuBa);
+        document.writeln(typeof(soThuBa));
+        let soThuTu="9.5";
+        document.writeln(parseFloat(soThuTu))
+    </script>
+</body>
+
+</html>
