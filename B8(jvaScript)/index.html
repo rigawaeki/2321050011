@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thongTinDonHang ={
+            maDonHang : "11111111",
+            thongTinKhachHang :{
+                hoTen :"Phạm Văn Đại",
+                sdt : "0394921689",
+                thanThiet : true,
+            },
+            danhSachSanPham :{
+                cafe:{
+                    maSanPham  :"22222222",
+                    tenSp :"cafe",
+                    soLuong : 2,
+                    giaTienSp :100000
+                },
+                matcha:{
+                    maSanPham  :"33333333",
+                    tenSp :"matcha",
+                    soLuong : 2,
+                    giaTienSp :100000
+                },
+                trasua: {
+                maSanPham  :"44444444",
+                tenSp :"Trà sữa",
+                soLuong : 2,
+                giaTienSp :100000
+                },
+            },
+            trangThaiThanhToan : true,
+            diaChiGiaoHang :"Hà Nội"
+        };
+        document.writeln((thongTinDonHang.danhSachSanPham.cafe.soLuong*thongTinDonHang.danhSachSanPham.cafe.giaTienSp +
+        thongTinDonHang.danhSachSanPham.matcha.giaTienSp*thongTinDonHang.danhSachSanPham.matcha.soLuong+
+        thongTinDonHang.danhSachSanPham.trasua.giaTienSp*thongTinDonHang.danhSachSanPham.trasua.soLuong))
+
+        // + là nối chuỗi
+        let hoTen = "Dai dep jai volo";
+        document.writeln(hoTen.length);
+        document.writeln(hoTen[0]);
+        document.writeln(hoTen.slice(3,11));
+        document.writeln(hoTen.replace("dep jai","thong minh"));
+        document.writeln(hoTen.toLocaleUpperCase());
+        document.writeln(hoTen.toLocaleLowerCase());
+        document.writeln(hoTen.indexOf("o"));
+        document.writeln(hoTen.includes("a"));
+        document.writeln(hoTen.split(' '));
+        document.writeln(hoTen.startsWith("Dai"));
+        var pi = 3.14159;
+        document.writeln(pi.toFixed(1));
+        // document.writeln(isNaN("10"));
+    
+        let toDay = new Date('2005-04-05');
+        // lấy ra năm
+        document.writeln(toDay.getFullYear())
+        // lấy tháng
+        document.writeln(toDay.getMonth())
+        // lấy ngày
+        document.writeln(toDay.getDate())
+        // lấy thứ
+        document.writeln(toDay.getDay())
+        //  lấy giờ
+        document.writeln(toDay.getHours())
+        document.writeln(toDay.getMinutes())
+        document.writeln(toDay.getSeconds())
+        document.writeln(toDay)
+    </script>
+</body>
+</html>
