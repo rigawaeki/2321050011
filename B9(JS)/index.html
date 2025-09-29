@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // mảng
+        let arr =[1,2,3,4,1,2,3];
+        let ten = "ten";
+        let thongTin ={
+            ten : ten,
+        }
+        // hàm Array.isArray() check xem phải mảng hay k
+        document.writeln(Array.isArray(arr));
+        // name.length trả về chiều dài mảng
+        document.writeln(arr.length);   
+        document.writeln(arr[2]);
+        document.writeln(arr.indexOf(1));
+        document.writeln(arr.lastIndexOf(3));
+        document.writeln(arr);
+        let a,b,c,d;
+        a = [1,2,3];
+        b = "java sờ cờ ríp";
+        c = [42,"JS"];
+        d = a.concat(b,c);
+        // d = d.join("-");
+        d.pop();
+        d.push(36);
+        d.reverse()
+        // xóa phần tử đầu
+        d.shift(); 
+        // thêm phần tử đầu vào mảng
+        d.unshift("a");
+        document.writeln(Array.isArray(d));
+        document.writeln(d);
+        let so = "100111111111111111111111111111111111111111111111111111111111111111111111111111111111111111";
+        socuoi = parseInt(so.length-1);
+        if(socuoi%2==0) {document.writeln("Chẵn")}
+        else {document.writeln("lẻ")}
+
+        let now = new Date().getHours;
+        if((5<=now)&&(now<10)) {
+            document.writeln("chao buoi sang")
+        }else if((10<=now)&&(now<13)) {
+            document.writeln("chao buoi trua")
+        }else if((13<=now)&&(now<17)) {
+            document.writeln("chao buoi chieu")
+        }else if((17<=now)&&(now<22)) {
+            document.writeln("chao buoi toi")
+        }else document.writeln("chao buoi dem")
+        
+        
+        let A = 10 ,B =10, C=10;
+        let tong=A* 0.6+B*0.3+C*0.1
+        if((4<=tong)&&(tong<5)) {
+            document.writeln("D")
+        }else if((5<=tong)&&(tong<7)) {
+            document.writeln("C")
+        }else if((7<=tong)&&(tong<8)) {
+            document.writeln("B")
+        }else if((8<=tong)&&(tong<=10)) {
+            document.writeln("A")
+        }else document.writeln("F")
+    </script>
+
+</body>
+</html>
