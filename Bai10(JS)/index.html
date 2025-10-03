@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d = new Date()
+        let theDay = d.getDay() // 5
+        switch (theDay){
+            case 5:
+                document.writeln("");
+            case 6:
+                document.writeln("");
+            case 0:
+                document.writeln("")
+                break;
+            case 1:
+            case 2:
+            case 3:
+                document.writeln("")
+            default:
+                document.writeln("")
+        }
+        let danhSach = ["Đại","Đại vippro"," Đại đz"," đại hihi"]
+        
+        for (let i= 0; i < danhSach.length; i++){
+            if(danhSach[i].toLowerCase().startsWith("đại")) document.writeln(danhSach[i]);
+        }
+        // let i = 0;
+        // while(i<=10){
+        //     document.writeln("The number is"+i + "<br>");
+        //     i+=1;
+        // }
+        // alert("hello");
+        // let result =confirm("press a button")
+        // if (result==true){
+        //     document.writeln("Bấm oke");
+        // }
+        // else {
+        //     document.writeln("bấm can sồ")
+        // }  
+        // let result2 = prompt("chao anh chang dep trai"," dai pham")
+        // document.writeln(result2);
+        function sayHello(){
+            document.writeln("yoooooooooooo")
+        }
+        sayHello();
+        let ten = prompt("chao anh chang dep trai"," dai pham")
+        let nam = prompt("chao anh chang dep trai"," dai pham")
+        function sayHello2(ten,nam){
+            document.writeln(ten+nam)
+        }
+        sayHello2(ten,nam);
+    </script>
+    
+</body>
+</html>
