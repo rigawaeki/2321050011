@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+        }
+        .left{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <h1>Tính chỉ số BMI</h1>
+            </div>
+            <div>
+                <h3>Nhập chiều cao</h3>
+                <input type="number" id="height">
+            </div>
+            <div>
+                <h3>Nhập cân nặng</h3>
+                <input type="number" id="weight">
+            </div>
+                <button onclick="tinhBMI()" >Tính BMI</button>
+            </div>
+            <div>
+                <input type="number" id="ketQua">
+            </div>
+        <div class="right"> 
+            <div> <img class="anh" src="green.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+        let bmi=0;
+        function tinhBMI(){
+            let a = parseFloat(document.getElementById('weight').value);
+            let b = parseFloat(document.getElementById('height').value);
+            let canhBao ="";
+            if(!a){
+                canhBao+="hay nhap can nang ";
+            }
+            if(!b){
+                canhBao+="hay nhap chieu cao";
+            }
+            if(canhBao){
+                alert(canhBao);
+            }
+            bmi = a/(b*b);
+            document.getElementById('ketQua').value=bmi.toFixed(1);
+            doianh()
+        }
+        function doianh(bmi){
+            if(bmi<18.5){
+                document.getElementsByClassName('anh')[0].src='blue.jpg'
+            }
+            else if(18.5<=bmi<=24.9){
+                document.getElementsByClassName('anh')[0].src='green.jpg'
+            }
+            else if(25<=bmi<=29.9){
+                document.getElementsByClassName('anh')[0].src='yellow.jpg'
+            }
+            else if(30<=bmi<=39.9){
+                document.getElementsByClassName('anh')[0].src='orange.jpg'
+            }
+            else {
+                document.getElementsByClassName('anh')[0].src='red.jpg'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h1>Tính Tổng</h1>
+    <h1>Tính Tổng</h1>
     <div>
         <p> Nhập vào số thứ nhất</p>
         <input type="number" id="soThuNhat" value="10">
@@ -16,29 +16,53 @@
         <input type="number" id="soThuHai" value="1">
     </div>
     <div>
-        <button onclick="tinhTong()">TÍnh Tổng</button>
+        <button onclick="tinhToan('cong')">Tính Tổng</button>
     </div>
     <div>
+        <button onclick="tinhToan('tru')">Tính Hiệu</button>
+    </div>
+    <div>
+        <button onclick="tinhToan('chia')">Tính Thương</button>
+    </div>
+    <div>
+        <button onclick="tinhToan('nhan')">Tính Tích</button>
+    </div>
+    <div>
+    <div>
         Kết quả: <input type="number" id="ketQua" value="" class="ket-qua">
-    </div> -->
-    <script>
-        // function tinhTong(){
-        //     let soThuNhat = parseFloat( document.getElementById('soThuNhat').value)
-        //     let soThuHai =  parseFloat(document.getElementById('soThuHai').value)
-        //     let canhBao="";
-        //     if(!soThuNhat){
-        //         canhBao+="vui long nhp so thu nhat"
-        //     }
-        //     if(!soThuHai){
-        //         canhBao+="vui long nhp so thu hai"
-        //     }
-        //     if(canhBao){
-        //         alert(canhBao);
-        //     }
-        //     let tong = soThuNhat+soThuHai;
+    </div>
 
-        //     document.getElementById('ketQua').value = tong;
-        // }
+    <script>
+        function tinhToan(phepTinh){
+            let soThuNhat = parseFloat( document.getElementById('soThuNhat').value)
+            let soThuHai =  parseFloat(document.getElementById('soThuHai').value)
+            let canhBao="";
+            let ketQua=0;
+            if(!soThuNhat){
+                canhBao+="vui long nhp so thu nhat";
+            }
+            if(!soThuHai){
+                canhBao+="vui long nhp so thu hai";
+            }
+            if(canhBao){
+                alert(canhBao);
+            }
+            if(phepTinh=='cong'){
+                ketQua = soThuNhat+soThuHai;
+            }
+            else if(phepTinh=='tru'){
+                ketQua = soThuNhat-soThuHai;    
+            }
+            else if(phepTinh=='nhan'){
+                ketQua = soThuNhat*soThuHai;
+            }
+            else {
+                ketQua = soThuNhat/soThuHai;
+            }
+            
+            document.getElementById('ketQua').value = ketQua;
+        }
+        
 
         // let ten = prompt("dai dep zai phai ko","hiih")
         // let tuoi = prompt("hihihihiih ??", "âhsdhsadhasd")

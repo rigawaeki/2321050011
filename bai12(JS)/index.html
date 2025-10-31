@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ví dụ về thay đổi chế độ</h1>
+        <img class="anh" width="360px" src="sun.jpg" alt="">
+        <div>
+            <h1>Chế độ sáng</h1>
+        </div>
+        <div>
+            <button onclick="doiCheDo()">Chuyển chế độ</button>
+        </div>
+    </div>
+    <script>
+        let cheDo = true;
+        function doiCheDo(){
+            if(cheDo){
+                document.getElementsByTagName('body')[0].style = 'background-color: black';
+                document.getElementsByTagName('h1')[0].style = 'color: white';
+                document.getElementsByTagName('h1')[1].style = 'color: white';
+                document.getElementsByTagName('h1')[1].innerHTML = 'Chế độ tối';
+                document.getElementsByClassName('anh')[0].src = 'night.jpg'
+                cheDo = false
+            }
+            else {
+                document.getElementsByTagName('body')[0].style = 'background-color: white';
+                document.getElementsByTagName('h1')[0].style = 'color: black';
+                document.getElementsByTagName('h1')[1].style = 'color: black';
+                document.getElementsByTagName('h1')[1].innerHTML = 'Chế độ Sáng';
+                document.getElementsByClassName('anh')[0].src = 'sun.jpg'
+                cheDo = true
+            }
+        }
+    </script>
+</body>
+</html>
