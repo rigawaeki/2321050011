@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        body{
+            display: flex;
+            justify-content: center;
             
+        }
+        .container{
+            margin-top: 10%;
+            display: flex;
+            background-color: orange;
+            padding: 30px;
+            border-radius: 10px;
         }
         .left{
             
         }
+        .right{
+            
+        }
+        .anh{
+            width: 150px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        h3{
+            margin-bottom: -1px;
+        }
+        
     </style>
 </head>
 <body>
@@ -27,11 +48,13 @@
                 <h3>Nhập cân nặng</h3>
                 <input type="number" id="weight">
             </div>
+            <div>
                 <button onclick="tinhBMI()" >Tính BMI</button>
             </div>
             <div>
                 <input type="number" id="ketQua">
             </div>
+        </div>
         <div class="right"> 
             <div> <img class="anh" src="green.jpg" alt=""></div>
         </div>
@@ -42,30 +65,32 @@
             let a = parseFloat(document.getElementById('weight').value);
             let b = parseFloat(document.getElementById('height').value);
             let canhBao ="";
-            if(!a){
-                canhBao+="hay nhap can nang ";
+            if(!a || a <0){
+                canhBao+="hay nhap lai can nang ";
             }
-            if(!b){
-                canhBao+="hay nhap chieu cao";
+            if(!b || b<0){
+                canhBao+="hay nhap lai chieu cao";
             }
             if(canhBao){
                 alert(canhBao);
             }
-            bmi = a/(b*b);
-            document.getElementById('ketQua').value=bmi.toFixed(1);
-            doianh()
+            if(!canhBao){
+                bmi = a/(b*b);
+                document.getElementById('ketQua').value=bmi.toFixed(1);
+                doianh(bmi)
+            }
         }
         function doianh(bmi){
             if(bmi<18.5){
                 document.getElementsByClassName('anh')[0].src='blue.jpg'
             }
-            else if(18.5<=bmi<=24.9){
+            else if(bmi >= 18.5 && bmi < 25){
                 document.getElementsByClassName('anh')[0].src='green.jpg'
             }
-            else if(25<=bmi<=29.9){
+            else if(bmi >= 25 && bmi < 30){
                 document.getElementsByClassName('anh')[0].src='yellow.jpg'
             }
-            else if(30<=bmi<=39.9){
+            else if(bmi >= 30 && bmi < 40){
                 document.getElementsByClassName('anh')[0].src='orange.jpg'
             }
             else {
