@@ -9,7 +9,7 @@ header {
     width: 80%;
     margin: auto;
 }
-ul {
+nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -18,10 +18,14 @@ ul {
     align-items: center;
     color: white;
     font-size: 25px;
+
 }
 nav {
     display: flex;
     justify-content: space-between;
+}
+.anh_fptheader{
+    width: 100px;
 }
 main {
     width: 80%;
@@ -47,6 +51,41 @@ main {
     margin-top: 10px;
     border-radius: 10px;
 }
+.banner_trailer{
+    width: 40%;
+    display: flex;
+}
+.banner_trailer_left {
+    margin-right: 10px;
+}
+.banner_trailer_right {
+    margin-right: 10px;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    
+}
+.tenPhim{
+    display: flex;
+    padding: 0;
+}
+.tuoi{
+    display: flex;
+    padding: 0;
+}
+.thoiLuong{
+    display: flex;
+    padding: 0;
+}
+.quocGia{
+    display: flex;
+    padding: 0;
+}
+.linktrailer{
+    display: flex;
+}
 .title_cayphim {
     display: flex;
     justify-content: space-between;
@@ -62,6 +101,8 @@ main {
 }
 .anh_phim{
     border-radius: 10px;
+    width: 200px;
+    height: 300px;
 }
 .tieu_de_phim{
     display: flex;
@@ -74,11 +115,30 @@ footer {
     margin: auto;
 }
 .thongtin{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+
 }
-.anh_thongtin{
-    
+.congty{
+    width: 18%;
 }
-.anh{
-    width: 20px;
+.congty3{
+    display: flex;
+    justify-content: space-between;
+}
+.anhfptplay{
+    width: 200px;
+}
+.anh_congty{
+    width: 100px;
+    margin-top: 10px;
+}
+.danhsach {
+    list-style: none;
+    padding-left: 0;
+}
+.danhsach li{
+    font-size: 20px;
+    color: grey;
 }
