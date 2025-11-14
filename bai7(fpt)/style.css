@@ -24,6 +24,9 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+.header1 li {
+    font-size: 15px;
+}
 .anh_fptheader{
     width: 100px;
 }
@@ -36,7 +39,7 @@ main {
 .mainbanner1 img {
     width: 100%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 10px;
 }
 .mainbanner2 img {
