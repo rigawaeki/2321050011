@@ -11,6 +11,7 @@ create DATABASE if not EXISTS quan_ly_web_phim;
 --     tập phim
 --     dạo diễn
 --     diễn viên
+    số tập
 -- 2.người dùng
 --     id
 --     tên
