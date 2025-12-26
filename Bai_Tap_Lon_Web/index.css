@@ -1,0 +1,97 @@
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left_header{
+
+        }
+        .right_header{
+
+        }
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        li{
+            margin: 5px 5px;
+        }
+        main {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+        }
+        .main1{
+
+        }
+        .main1_img{
+
+        }
+        .main2{
+            
+        }
+        .main3{
+            display: flex;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+        .left_main3 {
+            width: 5%;
+            padding: 0%;
+            margin-top: -3%;
+            margin-left: 1%;
+        }
+        .right_main3 {
+            width: 95%;
+        }
+        .main4{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main4_inside {
+            width:30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .main4_inside_img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .main5{
+
+        }
+        .kind_of_rooms{
+            display: flex;
+            overflow-x: scroll;
+        }
+        .rooms{
+            flex-shrink: 0;
+            margin-left: 2%;
+        }
+        .room_img{
+            width: 300px;
+            height: 200px;
+        }
+        .main6 {
+            width: 100%;
+        }
+        .main6_1{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main6_1_text{
+            width: 40%;
+            font-size: 13px;
+        }
+        .main6_1_img{
+            width: 450px;
+            height: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
